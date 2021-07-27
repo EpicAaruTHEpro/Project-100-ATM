@@ -1,4 +1,4 @@
-class atm() :
+class Atm() :
     def __init__(self, name, cardNum, pin, withdrawl, balance):
         self.name = name
         self.cardNum = cardNum
@@ -9,16 +9,16 @@ class atm() :
     def cashWithdrawl(self, withdrawl) :
         print("You have withdrawn", withdrawl)
 
-    def BalanceEnquiry(self, balance):
+    def balanceEnquiry(self, balance):
         print("You currently have", balance)
 
 # Making the accounts for the atm
-Jeff = atm("Jeff", 159043, 567210, 9750, 193278)
-Jamie = atm("Jamie", 574389, 318712, 700, 52340)
+Jeff = Atm("Jeff", 159043, 567210, 9750, 193278)
+Jamie = Atm("Jamie", 574389, 318712, 700, 52340)
 
 # Printing values
 print(Jeff.cardNum)
 print(Jamie.cardNum)
 Jeff.cashWithdrawl(Jeff.withdrawl)
-Jamie.BalanceEnquiry(Jamie.balance)
+Jamie.balanceEnquiry(Jamie.balance)
 
